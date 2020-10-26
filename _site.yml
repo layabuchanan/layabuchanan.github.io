@@ -11,4 +11,4 @@ navbar:
       href: http://github.com/layabuchanan/
 output:
   html_document:
-    theme: cerulean
+    theme: journal
