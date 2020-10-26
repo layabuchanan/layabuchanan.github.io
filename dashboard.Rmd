@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "Examining Max Temp"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -7,8 +7,12 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+data("ny_noaa")
 ```
+
 
 Column {data-width=650}
 -----------------------------------------------------------------------
@@ -16,7 +20,10 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-
+noaa_df %>% 
+  filter(year == 1997:2001) %>%
+  count(tmax) %>% 
+  plot_ly(x = ~tmax, y = ~n, color = ~tmax, type = "bar", text = ~paste("Temp: ", tmax, "Count: ", n), colors = "viridis")
 ```
 
 Column {data-width=350}
