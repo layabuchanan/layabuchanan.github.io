@@ -13,8 +13,24 @@ library(plotly)
 data("ny_noaa")
 ```
 
+```{r}
+noaa_df = 
+ny_noaa  %>% 
+  separate(date, into = c("year", "month", "day")) %>% 
+  mutate(month = recode(month, `01` = "january", `02` = "february",  `03` = "march", `04` = "april", `05` = "may", `06` = "june", `07` = "july", `08` = "august", `09` = "september", `10` = "october", `11` = "november", `12` = "december")) %>% 
+  mutate(
+    tmin = as.numeric(tmin),
+    tmax = as.numeric(tmax),
+    prcp = prcp/100,
+    tmin = tmin/10,
+    tmax = tmax/10,
+    snow = snow/10,
+    snow = snow/10
+  )
+```
 
-Column {data-width=650}
+
+Column {data-width=350}
 -----------------------------------------------------------------------
 
 ### Chart A
@@ -26,18 +42,25 @@ noaa_df %>%
   plot_ly(x = ~tmax, y = ~n, color = ~tmax, type = "bar", text = ~paste("Temp: ", tmax, "Count: ", n), colors = "viridis")
 ```
 
-Column {data-width=350}
+Column {data-width=650}
 -----------------------------------------------------------------------
 
 ### Chart B
 
 ```{r}
-
+noaa_df %>%
+  filter(!snow == 0) %>% 
+  filter(year == 1997:2001) %>% 
+  plot_ly(
+    x = ~tmax, y = ~snow, type = "scatter", mode = "markers", 
+    text = ~paste("Max Temp: ", tmax, "Year: ", year), color = ~month, "alpha" = 0.7, colors = "viridis")
 ```
 
 ### Chart C
 
 ```{r}
-
+noaa_df %>% 
+  filter(year == 1997:2001) %>%
+  plot_ly(y = ~tmax, color = ~month, type = "box", colors = "viridis")
 ```
 

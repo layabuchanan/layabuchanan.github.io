@@ -31,16 +31,10 @@ ny_noaa  %>%
     snow = snow/10,
     snow = snow/10
   )
-  
-
-noaa_df %>%
-  sample_n(2500) %>% 
-  plot_ly(
-    x = ~tmax, y = ~tmin, type = "scatter", mode = "markers", "alpha" = 0.5)
 
 noaa_df %>% 
   filter(year == 1997:2001) %>%
-  plot_ly(y = ~tmax, type = "box", colors = "viridis")
+  plot_ly(y = ~tmax, color = ~month, type = "box", colors = "viridis")
 
 noaa_df %>% 
   filter(year == 1997:2001) %>%
