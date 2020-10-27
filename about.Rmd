@@ -1,7 +1,67 @@
 ---
-title: "About me"
+title: "My Resume"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
+
+## Education
+
+##### Columbia University Mailman School of Public Health, New York, NY
+Master of Public Health, Epidemiology, April 2021
+
+Relevant Courses: Applications of Epidemiologic Research Methods, Design and Conduct of Epidemiologic Studies, Analysis of Categorical Data, Journal Club in Toxicology and Molecular Epidemiology, Molecular Epidemiology, Biomarkers of Environmental Health, Data Science, Applied Epidemiologic Analysis
+
+##### University of Northern Colorado, Greeley, CO
+Bachelor of Arts in Geography, May 2018
+
+Relevant Courses: ArcGIS, geospatial programming, analysis of geospatial data
+
+
+## Experience
+
+##### Global Psychiatric Epidemiology Group
+###### Intern, June 2020 - August 2020
+·	Performed literature reviews on various topics related to urban health, environmental health, and psychiatric epidemiology
+
+·	Assisted with development research projects
+
+·	Assisted with assorted administrative such as contact database entry and data entry tasks
+
+
+
+##### Southwestern Vermont Health Center
+###### AmeriCorps VISTA, August 2018 - July 2019
+·	Created two programs for populations in recovery and youth at risk of substance use disorder, as well as one medication take-back program with the intention of alleviating the opioid epidemic in Bennington County, Vermont
+
+·	Recruited 25 volunteers for community service projects, created two outreach programs for individuals in recovery, wrote grants and press releases, created two social media outreach programs, created free recreational opportunities for the most impoverished areas of the town, co-authored the 2017 Community Health Needs Assessment Report taught a class about healthy behaviors at the local middle school
+
+·	Supervised an intern from Bennington College as she developed youth art programs, recruited volunteers and contributed to community outreach programs
+
+##### University of Northern Colorado
+###### Undergraduate Researcher, August 2016 - May 2017
+·	Completed an Honors Thesis, entitled Urbanization in Central Asia; a GIS Analysis of Ulaanbaatar, Mongolia, aimed at determining the viability and social and economic sustainability of the growing ger districts of Ulaanbaatar, Mongolia
+
+·	Offered suggestions as to how Ulaanbaatar’s supporters and government officials can work to improve Ulaanbaatar’s infrastructure, and discusses potential solutions to combat the public health crisis concerning Ulaanbaatar’s air pollution
+
+##### City of Greeley Department of Urban Planning
+###### GIS Intern, January 2017 - May 2017
+·	Created 15+ maps of permits and development for the year 2016
+
+·	Conducted GIS analysis on the City of Greeley’s infill development walkability, and oil sector
+
+·	Created 10+ maps for the city’s long-range plan
+
+##### City of Greeley Department of Community Development
+###### GIS Intern, August 2016 - December 2017
+·	Collaborated with the Principal Investigator on a study designed to produce a statistical portrait of the City of Greeley to be used in the city’s long-range plan 
+
+## Skills
+
+##### Technical
+·	Competency in SAS and Python
+
+·	Familiarity with R
+
+·	Mastery of ArcGIS software

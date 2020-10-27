@@ -36,10 +36,12 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-noaa_df %>% 
-  filter(year == 1997:2001) %>%
-  count(tmax) %>% 
-  plot_ly(x = ~tmax, y = ~n, color = ~tmax, type = "bar", text = ~paste("Temp: ", tmax, "Count: ", n), colors = "viridis")
+noaa_df %>%
+  filter(!snow == 0) %>% 
+  filter(year == 1997:2001) %>% 
+  plot_ly(
+    x = ~tmax, y = ~snow, type = "scatter", mode = "markers", 
+    text = ~paste("Max Temp: ", tmax, "Year: ", year), color = ~month, "alpha" = 0.7, colors = "viridis")
 ```
 
 Column {data-width=350}
