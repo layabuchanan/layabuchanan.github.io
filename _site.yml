@@ -8,7 +8,7 @@ navbar:
     - icon: fa-envelope fa-lg
       href: mailto:lmb2295@cumc.columbia.edu
     - icon: fa-linkedin-square  fa-lg
-      href:https://www.linkedin.com/in/layabuchanan/
+      href: https://www.linkedin.com/in/layabuchanan/
     - icon: fa-github fa-lg
       href: http://github.com/layabuchanan/
 output:
