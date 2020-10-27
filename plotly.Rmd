@@ -49,3 +49,4 @@ noaa_df %>%
     text = ~paste("Max Temp: ", tmax, "Year: ", year), color = ~month, "alpha" = 0.7, colors = "viridis")
 
 ```
+
