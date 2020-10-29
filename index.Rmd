@@ -17,7 +17,7 @@ I am current student at the Columbia University Mailman School of Public Health 
 
 #### Bonus: Dashboard
 
-Here is a link to a [dashboard](dashboard.html) featuring three plots exploring the maximum temperature variable in the NY NOAA dataset for the years 1997 to 2001. The plots in this dashboard display (maximum temperature is always displayed in degrees Celcius:
+This is a little awkward and I don't know where else to put this for P8105 homework #4, so here is a link to a [dashboard](dashboard.html) featuring three plots exploring the maximum temperature variable in the NY NOAA dataset for the years 1997 to 2001. The plots in this dashboard display (maximum temperature is always displayed in degrees Celcius:
 
 *   the overall distribution of the maximum temperature per day for each station
 

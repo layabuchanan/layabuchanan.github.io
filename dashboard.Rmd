@@ -33,7 +33,7 @@ ny_noaa  %>%
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Maxiumum Temperature and Snowfall
 
 ```{r}
 noaa_df %>%
@@ -47,7 +47,7 @@ noaa_df %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Max Temp Distribution
 
 ```{r}
 noaa_df %>% 
@@ -56,7 +56,7 @@ noaa_df %>%
   plot_ly(x = ~tmax, y = ~n, color = ~tmax, type = "bar", text = ~paste("Temp: ", tmax, "Count: ", n), colors = "viridis")
 ```
 
-### Chart C
+### Max Temps by Month
 
 ```{r}
 noaa_df %>% 
